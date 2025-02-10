@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('bglogo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-sizing: border-box;
+   
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    min-height: 50px;
+}
+
+#text-input {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#highlighted-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+#grammar-result {
+    margin-top: 20px;
+    font-size: 14px;
+    color: red;
+    text-align: left;
+}
+
+.highlight {
+    text-decoration: line-through;
+    color: red;
+}
+
+.replacement {
+    color: green;
+    font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    #text-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #result, #highlighted-result, #grammar-result {
+        font-size: 16px;
+    }
+}
