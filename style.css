@@ -18,10 +18,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     text-align: center;
     box-sizing: border-box;
-   
 }
 
 .logo {
@@ -58,6 +57,12 @@ button:disabled {
     font-size: 18px;
     color: #333;
     min-height: 50px;
+    max-height: 150px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 #text-input {
@@ -72,16 +77,31 @@ button:disabled {
 
 #highlighted-result {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     text-align: left;
+    max-height: 150px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
 }
 
 #grammar-result {
     margin-top: 20px;
-    font-size: 14px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     color: red;
     text-align: left;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    max-height: 150px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .highlight {
@@ -106,7 +126,7 @@ button:disabled {
         margin: 5px;
     }
 
-    #text-input {
+    #text-input, #grammar-result, #highlighted-result {
         font-size: 14px;
         padding: 8px;
     }
